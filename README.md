@@ -1,2 +1,2 @@
-# Qbill-backend
-Backend web service for Qbill
+# Quibill-backend
+Backend web service for Quibill
