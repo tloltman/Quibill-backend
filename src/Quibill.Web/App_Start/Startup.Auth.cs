@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Quibill.Web.Providers;
-using Quibill.Web.Models;
+using Quibill.Domain.Identity;
 
 namespace Quibill.Web
 {

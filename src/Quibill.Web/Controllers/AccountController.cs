@@ -13,7 +13,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using Quibill.Web.Models;
+using Quibill.Domain.Identity;
 using Quibill.Web.Providers;
 using Quibill.Web.Results;
 

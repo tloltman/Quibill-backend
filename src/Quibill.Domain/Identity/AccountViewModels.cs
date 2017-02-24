@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Quibill.Web.Models
+namespace Quibill.Domain.Identity
 {
     // Models returned by AccountController actions.
 

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace Quibill.Web.Models
+namespace Quibill.Domain.Identity
 {
     // Models used as parameters to AccountController actions.
 
