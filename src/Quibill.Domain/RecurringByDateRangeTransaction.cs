@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Quibill.Domain
 {
-    class RecurringTransaction
+    class RecurringByDateRangeTransaction : ITransaction, IRecurring
     {
     }
 }
