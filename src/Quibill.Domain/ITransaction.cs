@@ -2,10 +2,10 @@
 {
     internal interface ITransaction
     {
-        int TransactionId { set; }
-        float TransactionAmount { set;}
-        string TransactionType { set; } // TODO make this an enum?
-        System.DateTime TransactionDate { set; }
+        int TransactionId { get; }
+        float TransactionAmount { get;}
+        string TransactionType { get; } // TODO make this an enum?
+        System.DateTime TransactionDate { get; }
 
     }
 }

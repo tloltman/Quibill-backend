@@ -1,0 +1,17 @@
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.Tests.dll.config
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.Tests.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.Tests.pdb
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.pdb
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Quibill.Domain.dll.config
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\obj\Debug\Quibill.Domain.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\obj\Debug\Quibill.Domain.Tests.dll
+C:\Users\Baruc\Source\Repos\Quibill-backend\tests\Quibill.Domain.Tests\obj\Debug\Quibill.Domain.Tests.pdb

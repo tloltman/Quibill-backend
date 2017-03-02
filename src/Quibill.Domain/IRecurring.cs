@@ -2,7 +2,7 @@
 {
     internal interface IRecurring
     {
-        System.DateTime RecurrenceStartDate { set; }
-        System.DateTime ReccurenceRate { set; }
+        System.DateTime RecurrenceStartDate { get; }
+        System.DateTime ReccurenceRate { get; }
     }
 }
