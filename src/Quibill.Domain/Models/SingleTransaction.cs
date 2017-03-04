@@ -11,6 +11,6 @@ namespace Quibill.Domain
         int ITransaction.TransactionId { get; }
         float ITransaction.TransactionAmount { get; }
         string ITransaction.TransactionType { get; } // TODO make this an enum?
-        DateTime ITransaction.TransactionDate { get; }
+        DateTime ITransaction.AddDate { get; }
     }
 }

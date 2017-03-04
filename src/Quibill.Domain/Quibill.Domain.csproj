@@ -84,9 +84,6 @@
     <Compile Include="Models\IRecurring.cs" />
     <Compile Include="Models\ITransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\RecurringByDateRangeTransaction.cs" />
-    <Compile Include="Models\RecurringByNumberOfPaymentsTransaction.cs" />
-    <Compile Include="Models\RecurringIndefinitelyTransaction.cs" />
     <Compile Include="Models\SingleTransaction.cs" />
   </ItemGroup>
   <ItemGroup>
