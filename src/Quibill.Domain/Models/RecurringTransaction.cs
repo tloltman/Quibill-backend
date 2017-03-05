@@ -17,7 +17,7 @@ namespace Quibill.Domain.Models
 
 
         //Validates that the user doesn't select a transaction date outside the range of the month.
-        private int ValidateTransactionDateSelection(int TransactionDateSelection)
+        private int HandleOutOfRangeDateSelection(int TransactionDateSelection)
         {
             DateTime currentDateTime = DateTime.Now;
             int currentDaysInMonth = DateTime.DaysInMonth(currentDateTime.Year, currentDateTime.Month);
@@ -25,6 +25,10 @@ namespace Quibill.Domain.Models
             if (TransactionDateSelection > 0 && TransactionDateSelection <= currentDaysInMonth)
             {
                 return TransactionDateSelection;
+            }
+            else if (TransactionDateSelection > currentDaysInMonth)
+            {
+                return currentDaysInMonth;
             }
             else
             {
