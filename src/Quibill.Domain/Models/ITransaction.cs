@@ -4,7 +4,7 @@
     {
         int TransactionId { get; }
         decimal TransactionAmount { get;}
-        string TransactionType { get; } // TODO make this an enum?
+        DTO.Enums.TransactionType TransactionType { get; }
         System.DateTime AddDate { get; }
 
     }
