@@ -10,6 +10,22 @@
         console.log(jqXHR.responseJSON);
     }
 
+    self.getValues = function () {
+        var token = sessionStorage.getItem(tokenKey);
+        var headers = {};
+        if (token) {
+            headers.Authorization = 'Bearer ' + token;
+        }
+
+        $.ajax({
+            type: 'GET',
+            url: '/api/values/1',
+            headers: headers
+        }).done(function (data) {
+            alert("Got value: " + data);
+        }).fail(showError);
+    }
+
     self.register = function() {
         var registerData = {
             Email: $('#registerEmail').val(),
@@ -20,8 +36,8 @@
         $.ajax({
             type: 'POST',
             url: '/api/Account/Register',
-            contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify(registerData)
+            contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+            data: registerData
         }).done(function(data) {
             alert("Successfully registered!");
         }).fail(showError);
@@ -37,19 +53,17 @@
         $.ajax({
             type: 'POST',
             url: '/Token',
-            data: JSON.stringify(loginData)
+            contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+            data: loginData
         }).done(function(data) {
-            alert("User: " + data.username + "successfully logged in!");
+            alert("User: " + data.userName + " successfully logged in!");
+            sessionStorage.setItem(tokenKey, data.access_token);
         }).fail(showError);
     };
 
     self.logout = function() {
-        $.ajax({
-            type: 'POST',
-            url: '/api/Account/Logout'
-        }).done(function(data) {
-            alert("Successfully logged out!");
-        }).fail(showError);
+        sessionStorage.removeItem(tokenKey);
+        alert("Successfully logged out!")
     }
 }
 

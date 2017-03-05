@@ -19,11 +19,11 @@
                 <input id="registerConfirmPassword" class="form-control" type="password"/>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-default" onclick="loginPage.register()">Register</button>
+                <button type="button" class="btn btn-default" onclick="loginPage.register()">Register</button>
             </div>
         </form>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <h3>Log In</h3>
         <form>
             <div class="form-group">
@@ -35,10 +35,13 @@
                 <input id="loginPassword" class="form-control" type="password"/>
             </div>
             <div class="form-group">
-                <button class="btn btn-default" onclick="loginPage.login()">Log In</button>
-                <button class="btn btn-default" onclick="loginPage.logout()">Log Out</button>
+                <button type="button" class="btn btn-default" onclick="loginPage.login()">Log In</button>
+                <button type="button" class="btn btn-default" onclick="loginPage.logout()">Log Out</button>
             </div>
         </form>
+    </div>
+    <div class="col-md-4">
+        <button type="button" class="btn btn-primary" onclick="loginPage.getValues()">Get Values</button>
     </div>
 </div>
 
