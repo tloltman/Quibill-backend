@@ -81,7 +81,10 @@
     <Compile Include="Identity\AccountBindingModels.cs" />
     <Compile Include="Identity\AccountViewModels.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
+    <Compile Include="Models\ITransaction.cs" />
+    <Compile Include="Models\RecurringTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\SingleTransaction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
