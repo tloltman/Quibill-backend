@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Quibill.Domain.Models
 {
-    class RecurringTransaction : ITransaction
+    public class RecurringTransaction : ITransaction
     {
         public int TransactionId { get; }
         public float TransactionAmount { get; }
@@ -16,7 +16,8 @@ namespace Quibill.Domain.Models
         public int TransactionRecurrenceDay { get; }
 
 
-        //Validates that the user doesn't select a transaction date outside the range of the month.
+        //Handles the scenario of a user choosing a recurrence date beyond the number of days in the month.
+        //Also handles the scenario when the transaction falls on a day that doesn't exist in upcoming months.
         private int HandleOutOfRangeDateSelection(int TransactionDateSelection)
         {
             DateTime currentDateTime = DateTime.Now;

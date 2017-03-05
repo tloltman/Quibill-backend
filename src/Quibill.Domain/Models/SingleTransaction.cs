@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Quibill.Domain
 {
-    class SingleTransaction : ITransaction
+    public class SingleTransaction : ITransaction
     {
         public int TransactionId { get; }
         public float TransactionAmount { get; }
