@@ -46,7 +46,7 @@
     self.login = function() {
         var loginData = {
             grant_type: 'password',
-            username: $('#loginEmail').val(),
+            username: $('#loginUserName').val(),
             password: $('#loginPassword').val()
         }
 
