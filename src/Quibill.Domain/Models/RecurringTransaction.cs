@@ -10,7 +10,7 @@ namespace Quibill.Domain.Models
     {
         public int TransactionId { get; }
         public decimal TransactionAmount { get; }
-        public string TransactionType { get; }
+        public DTO.Enums.TransactionType TransactionType { get; }
         public DateTime AddDate { get; }
 
         public int TransactionRecurrenceDay { get; }

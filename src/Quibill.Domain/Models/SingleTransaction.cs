@@ -10,7 +10,7 @@ namespace Quibill.Domain
     {
         public int TransactionId { get; }
         public decimal TransactionAmount { get; }
-        public string TransactionType { get; } // TODO make this an enum?
+        public DTO.Enums.TransactionType TransactionType { get; }
         public DateTime AddDate { get; }
 
         public DateTime TransactionDate { get; }

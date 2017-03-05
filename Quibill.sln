@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quibill.Domain", "src\Quibill.Domain\Quibill.Domain.csproj", "{28918640-F414-4EAF-8858-4F9504A858F8}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quibill.Domain.Tests", "tests\Quibill.Domain.Tests\Quibill.Domain.Tests.csproj", "{EE326D81-958F-4FEF-8954-22806F2BF424}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quibill.Web.Tests", "tests\Quibill.Web.Tests\Quibill.Web.Tests.csproj", "{9CEF61EC-66E7-4511-9986-6958AF320DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quibill.DTO", "Quibill.DTO\Quibill.DTO.csproj", "{552C3793-900D-4D24-864D-D378A59C10C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9CEF61EC-66E7-4511-9986-6958AF320DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CEF61EC-66E7-4511-9986-6958AF320DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CEF61EC-66E7-4511-9986-6958AF320DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552C3793-900D-4D24-864D-D378A59C10C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552C3793-900D-4D24-864D-D378A59C10C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552C3793-900D-4D24-864D-D378A59C10C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552C3793-900D-4D24-864D-D378A59C10C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
