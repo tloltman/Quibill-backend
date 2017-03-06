@@ -65,7 +65,10 @@
             contentType: 'application/x-www-form-urlencoded; charset=utf-8',
             data: registerData
         }).done(function(data) {
-            alert("Successfully registered!");
+            $('#registerEmail').val('');
+            $('#registerPassword').val('');
+            $('#registerConfirmPassword').val('');
+            $('#regSuccess').show();
         }).fail(showError);
     };
 

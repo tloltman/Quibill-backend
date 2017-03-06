@@ -27,3 +27,8 @@ textarea {
 .username-label {
     color: white;
 }
+
+#regSuccess {
+    color: green;
+    display: none;
+}
