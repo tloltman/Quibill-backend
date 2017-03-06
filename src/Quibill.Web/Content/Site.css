@@ -15,3 +15,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#errors-container {
+    display: none;
+}
+
+.errors {
+    color: red;
+}
+
+.username-label {
+    color: white;
+}

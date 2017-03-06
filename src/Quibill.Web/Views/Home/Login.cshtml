@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        <form>
+            <h3>Register</h3>
+            <div class="form-group">
+                <label>Email</label>
+                <input id="registerEmail" class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input id="registerPassword" class="form-control" type="password"/>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input id="registerConfirmPassword" class="form-control" type="password"/>
+            </div>
+            <div class="form-group">
+                <button id="registerButton" type="button" class="btn btn-default">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-4">
+        <h3>Log In</h3>
+        <form>
+            <div class="form-group">
+                <label>User Name</label>
+                <input id="loginUserName" class="form-control" type="text"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input id="loginPassword" class="form-control" type="password"/>
+            </div>
+            <div class="form-group">
+                <button id="loginButton" type="button" class="btn btn-default">Log In</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="errors-container">
+            <ul class="errors">
+                
+            </ul>
+        </div>
+    </div>
+</div>
