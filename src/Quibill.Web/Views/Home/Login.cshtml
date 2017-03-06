@@ -19,7 +19,7 @@
                 <input id="registerConfirmPassword" class="form-control" type="password"/>
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-default" onclick="loginPage.register()">Register</button>
+                <button id="registerButton" type="button" class="btn btn-default">Register</button>
             </div>
         </form>
     </div>
@@ -35,18 +35,18 @@
                 <input id="loginPassword" class="form-control" type="password"/>
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-default" onclick="loginPage.login()">Log In</button>
-                <button type="button" class="btn btn-default" onclick="loginPage.logout()">Log Out</button>
+                <button id="loginButton" type="button" class="btn btn-default">Log In</button>
             </div>
         </form>
     </div>
-    <div class="col-md-4">
-        <button type="button" class="btn btn-primary" onclick="loginPage.getValues()">Get Values</button>
-    </div>
 </div>
 
-@section scripts
-{
-    <script src="~/Scripts/login.js"></script>
-}
-
+<div class="row">
+    <div class="col-md-12">
+        <div id="errors-container">
+            <ul class="errors">
+                
+            </ul>
+        </div>
+    </div>
+</div>
