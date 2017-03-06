@@ -3,8 +3,8 @@
     internal interface ITransaction
     {
         int TransactionId { get; }
-        float TransactionAmount { get;}
-        string TransactionType { get; } // TODO make this an enum?
+        decimal TransactionAmount { get;}
+        DTO.Enums.TransactionType TransactionType { get; }
         System.DateTime AddDate { get; }
 
     }

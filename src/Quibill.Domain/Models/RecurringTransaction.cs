@@ -9,8 +9,8 @@ namespace Quibill.Domain.Models
     public class RecurringTransaction : ITransaction
     {
         public int TransactionId { get; }
-        public float TransactionAmount { get; }
-        public string TransactionType { get; }
+        public decimal TransactionAmount { get; }
+        public DTO.Enums.TransactionType TransactionType { get; }
         public DateTime AddDate { get; }
 
         public int TransactionRecurrenceDay { get; }
@@ -18,16 +18,16 @@ namespace Quibill.Domain.Models
 
         //Handles the scenario of a user choosing a recurrence date beyond the number of days in the month.
         //Also handles the scenario when the transaction falls on a day that doesn't exist in upcoming months.
-        private int HandleOutOfRangeDateSelection(int TransactionDateSelection)
+        private int HandleOutOfRangeDateSelection(int TransactionRecurrenceDay)
         {
             DateTime currentDateTime = DateTime.Now;
             int currentDaysInMonth = DateTime.DaysInMonth(currentDateTime.Year, currentDateTime.Month);
 
-            if (TransactionDateSelection > 0 && TransactionDateSelection <= currentDaysInMonth)
+            if (TransactionRecurrenceDay > 0 && TransactionRecurrenceDay <= currentDaysInMonth)
             {
-                return TransactionDateSelection;
+                return TransactionRecurrenceDay;
             }
-            else if (TransactionDateSelection > currentDaysInMonth)
+            else if (TransactionRecurrenceDay > currentDaysInMonth)
             {
                 return currentDaysInMonth;
             }

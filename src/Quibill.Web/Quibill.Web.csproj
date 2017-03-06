@@ -303,6 +303,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Quibill.DTO\Quibill.DTO.csproj">
+      <Project>{552c3793-900d-4d24-864d-d378a59c10c2}</Project>
+      <Name>Quibill.DTO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Quibill.Domain\Quibill.Domain.csproj">
       <Project>{28918640-f414-4eaf-8858-4f9504a858f8}</Project>
       <Name>Quibill.Domain</Name>
