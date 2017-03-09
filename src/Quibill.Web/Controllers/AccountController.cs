@@ -71,7 +71,7 @@ namespace Quibill.Web.Controllers
         public IHttpActionResult Logout()
         {
             Authentication.SignOut(CookieAuthenticationDefaults.AuthenticationType);
-            return Ok();
+            return Ok("Logout success!");
         }
 
         // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
