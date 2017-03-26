@@ -71,8 +71,11 @@ namespace Quibill.Web
                 var role = new IdentityRole();
                 role.Name = AdminRole;
                 roleManager.Create(role);
+            }
 
-                //create an Admin super user who will maintain the website
+            //create an Admin super user who will maintain the website from the Web.config file if it doesn't exist.
+            if (UserManager.Find(AdminUserName, AdminPassword) == null)
+            {
 
                 var user = new ApplicationUser();
                 user.UserName = AdminUserName;
@@ -87,7 +90,7 @@ namespace Quibill.Web
                     var result1 = UserManager.AddToRole(user.Id, AdminRole);
                 }
 
-                //TODO create other roles besides Admin.
+                //TODO create other roles besides Admin.\
             }
         }
     }
