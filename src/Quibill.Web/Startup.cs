@@ -14,7 +14,7 @@ namespace Quibill.Web
 {
     public partial class Startup
     {
-        #region Admin Role Credentials
+        #region Super User Role Credentials
         public string AdminUserName
         {
             get
@@ -46,6 +46,7 @@ namespace Quibill.Web
                 return WebConfigurationManager.AppSettings["defaultAdminRole"];
             }
         }
+
         #endregion //Properties to get admin credentials from web.config
 
         public void Configuration(IAppBuilder app)
@@ -76,8 +77,10 @@ namespace Quibill.Web
             //create an Admin super user who will maintain the website from the Web.config file if it doesn't exist.
             if (UserManager.Find(AdminUserName, AdminPassword) == null)
             {
-
                 var user = new ApplicationUser();
+
+                //TODO write code to clean any old super users out of database if the web.config credentials change.
+
                 user.UserName = AdminUserName;
                 user.Email = AdminEmail;
                 string userPassword = AdminPassword;
