@@ -8,10 +8,11 @@ namespace Quibill.Domain.Models
 {
     public class RecurringTransaction : ITransaction
     {
-        public int TransactionId { get; }
-        public decimal TransactionAmount { get; }
-        public DTO.Enums.TransactionType TransactionType { get; }
-        public DateTime AddDate { get; }
+        public int TransactionId { get; set; }
+        public decimal TransactionAmount { get; set; }
+        public DTO.Enums.TransactionType TransactionType { get; set; }
+        public DateTime AddDate { get; set; }
+        public string BoundUser { get; set; }
 
         public int TransactionRecurrenceDay { get; }
 

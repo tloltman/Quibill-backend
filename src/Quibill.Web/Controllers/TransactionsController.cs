@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -8,8 +9,16 @@ using System.Web.Http;
 namespace Quibill.Web.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class TransactionsController : ApiController
     {
+        private DbContext TransactionsDbContext;
+
+        public TransactionsController()
+        {
+            return new AplicationDbContext;
+        }
+
+
         // GET api/values
         public IEnumerable<string> Get()
         {
