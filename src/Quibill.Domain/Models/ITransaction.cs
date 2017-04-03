@@ -6,7 +6,7 @@
         decimal TransactionAmount { get; set; }
         DTO.Enums.TransactionType TransactionType { get; set; }
         System.DateTime AddDate { get; set; }
-        string BoundUser { get; set; }
+        string BoundUserId { get; set; }
 
     }
 }

@@ -13,5 +13,6 @@ namespace Quibill.Web.Contexts
 
         public DbSet<RecurringTransaction> RecurringTransactions { get; set; }
         public DbSet<SingleTransaction> SingleTransactions { get; set; }
+       
     }
 }
