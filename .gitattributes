@@ -65,4 +65,4 @@
 ###############################################################################
 # linguist should ignore third-party files
 ####################################################
-Scripts/* linguist-vendored
+src/Quibill.Web/Scripts/* linguist-vendored
