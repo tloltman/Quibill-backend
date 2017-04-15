@@ -1,6 +1,6 @@
 ﻿namespace Quibill.Domain
 {
-    internal interface ITransaction
+    public interface ITransaction
     {
         int TransactionId { get; set; }
         decimal TransactionAmount { get; set; }
