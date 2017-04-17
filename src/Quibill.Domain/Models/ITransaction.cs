@@ -1,11 +1,12 @@
 ﻿namespace Quibill.Domain
 {
-    internal interface ITransaction
+    public interface ITransaction
     {
-        int TransactionId { get; }
-        decimal TransactionAmount { get;}
-        DTO.Enums.TransactionType TransactionType { get; }
-        System.DateTime AddDate { get; }
+        int TransactionId { get; set; }
+        decimal TransactionAmount { get; set; }
+        DTO.Enums.TransactionType TransactionType { get; set; }
+        System.DateTime AddDate { get; set; }
+        string BoundUserId { get; set; }
 
     }
 }
