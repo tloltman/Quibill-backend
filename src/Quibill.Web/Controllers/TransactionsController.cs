@@ -49,6 +49,7 @@ namespace Quibill.Web.Controllers
         public void Post([FromBody]SingleTransaction singleTransaction)
         {
            singleTransaction.BoundUserId = User.Identity.GetUserId();
+           singleTransaction.AddDate = DateTime.Now;
            transactionsContext.SingleTransactions.Add(singleTransaction);
            transactionsContext.SaveChanges();
         }
